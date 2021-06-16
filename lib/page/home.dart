@@ -21,7 +21,7 @@ class _HomeState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'El número es: $_count',
+                'The number is: $_count',
                 style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 15),
