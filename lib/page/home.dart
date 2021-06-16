@@ -63,7 +63,7 @@ class _HomeState extends State<HomePage> {
           onPressed: () {
             setState(() {
               _count++;
-              if (_count == 10) {
+              if (_count == 20) {
                 _count = 0;
               }
             });

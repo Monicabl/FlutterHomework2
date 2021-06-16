@@ -2,7 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:onboarding_two/page/home_page.dart';
+import 'package:onboarding_two/page/home.dart';
+import 'package:onboarding_two/page/home.dart';
 import 'package:onboarding_two/widget/button_widget.dart';
 
 class OnBoardingPage extends StatelessWidget {
@@ -12,19 +13,19 @@ class OnBoardingPage extends StatelessWidget {
           globalBackgroundColor: Colors.deepPurple[100],
           pages: [
             PageViewModel(
-              title: 'monicaaaaa',
-              body: 'borrallas',
-              image: buildImage('assets/raccoon.png'),
+              title: 'Are you ready to count?',
+              body: '',
+              image: buildImage('assets/images/welcome.png'),
               decoration: getPageDecoration(),
             ),
             PageViewModel(
-              title: 'Today a reader, tomorrow a leader',
+              title: 'An accountant is basically an organizer',
               body: 'Start your journey',
               footer: ButtonWidget(
                 text: 'Start',
                 onClicked: () => Home(context),
               ),
-              image: buildImage('assets/raccoon.png'),
+              image: buildImage('assets/images/count.png'),
               decoration: getPageDecoration(),
             ),
           ],
