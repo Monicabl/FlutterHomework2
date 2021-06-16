@@ -5,6 +5,7 @@ import 'package:introduction_screen/introduction_screen.dart';
 import 'package:onboarding_two/page/home.dart';
 import 'package:onboarding_two/page/home.dart';
 import 'package:onboarding_two/widget/button_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class OnBoardingPage extends StatelessWidget {
   @override
@@ -45,6 +46,25 @@ class OnBoardingPage extends StatelessWidget {
   void Home(context) => Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) => HomePage()),
       );
+//   void initState() {
+//     super.initState();
+//     print("monica2");
+//     checkSession();
+//   }
+
+//   void checkSession() async {
+//     SharedPreferences prefs = await SharedPreferences.getInstance();
+
+// // Set
+//     //prefs.setString('session', 'loquesea');
+
+// // Get
+//     String? token = prefs.getString('session');
+//     print(token);
+
+// // Remove
+//     //prefs.remove('apiToken');
+//   }
 
   Widget buildImage(String path) => Center(
         child: Image.asset(

@@ -1,7 +1,10 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:onboarding_two/main.dart';
 import 'package:onboarding_two/page/onboarding.dart';
 import 'package:onboarding_two/widget/button_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -38,6 +41,25 @@ class _HomeState extends State<HomePage> {
   void goToOnBoarding(context) => Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) => OnBoardingPage()),
       );
+//   void initState() {
+//     super.initState();
+//     print("monica2");
+//     checkSession();
+//   }
+
+//   void checkSession() async {
+//     SharedPreferences prefs = await SharedPreferences.getInstance();
+
+// // Set
+//     //prefs.setString('session', 'loquesea');
+
+// // Get
+//     String? token = prefs.getString('session');
+//     print(token);
+
+// // Remove
+//     //prefs.remove('apiToken');
+//   }
 
   Widget _crearButtoms() {
     return Row(
